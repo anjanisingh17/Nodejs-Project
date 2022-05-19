@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit page</title>
+</head>
+<body>
+     
+    <form action="/update_details/<%= data[0].id %>" method="post" enctype="multipart/form-data">
+        <p style="margin: auto;"><img width="100" src="../<%= data[0].image_name %> "></p>
+        <input type="hidden" value="<%= data[0].image_name %>" name="old_img">
+        <span>Update Profile Image</span>  
+        <input type="file" name="mypic" /><br>
+        
+        FirstName: <input type="text" value="<%= data[0].first_name %>" name="fname"><br>
+        FirstName: <input type="text" value="<%= data[0].last_name %>" name="lname"><br>
+        Branch:<input type="text" value="<%= data[0].branch %>" name="branch"><br>
+        Phone:<input type="text" value="<%= data[0].phone %>" name="phone"><br>
+
+        Option<select>
+            
+            <option value ="cs" >Cs</option>
+            <option value="mech">Mech</option>
+            <option value="civil">Civil</option>
+            <option value="ec" selected>Ec</option>
+            
+   
+        </select> <br>
+
+        City: <input type="text" value="<%= data[0].city %>" name="city"><br>    
+        <input type="submit" value="Update">
+       
+    </form>
+
+</body>
+</html>

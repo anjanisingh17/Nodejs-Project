@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <h1><center>Welcome to registration page</center></h1>
+   <div class="container">
+    <form method="POST" action="/registration" enctype="multipart/form-data">
+        <input type="text" name="fname" placeholder="Enter First Name"><br>
+        <input type="text" name="lname" placeholder="Enter Last Name"><br>
+        <select name="branch">
+            <option disabled>Select Branch</option>
+            <option value="cs">Cs</option>
+            <option value="mech">Mech</option>
+            <option value="civil">Civil</option>
+            <option value="ec">Ec</option>
+        </select><br> 
+        <input type="text" name="phone" placeholder="Enter your phone"><br>
+        <input type="text" name="city" placeholder="Enter your city"><br><br>
+        <span>Upload Profile Picture:</span>  
+        <input type="file" name="mypic" required/> <br>
+        <input type="submit" value="submit">   
+    </form>
+   </div>
+</body>
+</html>
