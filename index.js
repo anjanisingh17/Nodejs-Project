@@ -131,7 +131,7 @@ app.post('/update_details/:id',upload,(req,res)=>{
              fs.unlinkSync(old_img_path);
          }
     }else{
-         image_name =  body.old_img.tirm();
+         image_name =  body.old_img.trim();
     }
 
 
