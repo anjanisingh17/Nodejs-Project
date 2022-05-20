@@ -143,7 +143,7 @@ app.post('/update_details/:id',upload,(req,res)=>{
             console.log(err);
         }else{
             res.redirect('/show_details');
-            console.log("Hello Git Changes");
+            console.log("Hello Git Changes Today");
         }
     })
 
