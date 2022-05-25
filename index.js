@@ -6,7 +6,7 @@ var fs = require('fs');
 
 const app = express();
 app.use(express.static('public'));
-
+// coming from fe
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
